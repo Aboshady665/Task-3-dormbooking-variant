@@ -10,6 +10,12 @@ npm run install:all   # installs server/ and client/ (npm workspaces)
 npm run dev           # API on :4000, client on :5175
 ```
 
+Open the client at `http://localhost:5175` (the API health endpoint is at
+`http://localhost:4000/api/health`). There is no pre-created doctor or demo
+account: create an account on the Register page first, then use that same
+email and password to log in. Email addresses are matched without regard to
+capitalization.
+
 Create `server/.env` yourself with:
 
 ```

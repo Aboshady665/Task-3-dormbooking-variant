@@ -26,8 +26,8 @@ export default function Register() {
       <h1 className="text-xl font-semibold mb-4">Register</h1>
       <form onSubmit={handleSubmit} className="space-y-3">
         <input className="input" placeholder="Name" value={name} onChange={e => setName(e.target.value)} />
-        <input className="input" placeholder="Email" value={email} onChange={e => setEmail(e.target.value)} />
-        <input className="input" type="password" placeholder="Password" value={password} onChange={e => setPassword(e.target.value)} />
+        <input className="input" type="email" autoComplete="email" placeholder="Email" value={email} onChange={e => setEmail(e.target.value)} required />
+        <input className="input" type="password" autoComplete="new-password" placeholder="Password" value={password} onChange={e => setPassword(e.target.value)} required />
         {error && <div className="text-red-600 text-sm">{error}</div>}
         <button className="btn" type="submit">Create account</button>
       </form>
